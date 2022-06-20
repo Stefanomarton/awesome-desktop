@@ -329,8 +329,8 @@ awful.key({ modkey,           }, "j",
    -- Menubar
     awful.key({ modkey }, "p", function() menubar.show() end,
               {description = "show the menubar", group = "launcher"}),
-    awful.key({modkey}, "Tab", function() 
-     awesome.emit_signal("bling::window_switcher::turn_on")
+    awful.key({"Mod1", "Shift"}, "2", function() awful.spawn.with_shell ("flameshot gui")
+     
  end, {description = "Window Switcher", group = "bling"})
  )  
 
